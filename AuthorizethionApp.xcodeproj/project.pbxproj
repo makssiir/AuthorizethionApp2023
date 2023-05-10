@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E869EAF82A0C31D80039C979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869EAF72A0C31D80039C979 /* AppDelegate.swift */; };
 		E869EAFA2A0C31D80039C979 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869EAF92A0C31D80039C979 /* SceneDelegate.swift */; };
-		E869EAFC2A0C31D80039C979 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869EAFB2A0C31D80039C979 /* ViewController.swift */; };
+		E869EAFC2A0C31D80039C979 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869EAFB2A0C31D80039C979 /* LoginViewController.swift */; };
 		E869EAFF2A0C31D80039C979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E869EAFD2A0C31D80039C979 /* Main.storyboard */; };
 		E869EB012A0C31DA0039C979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E869EB002A0C31DA0039C979 /* Assets.xcassets */; };
 		E869EB042A0C31DA0039C979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E869EB022A0C31DA0039C979 /* LaunchScreen.storyboard */; };
+		E8B3F0E42A0C39BC009362E7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3F0E32A0C39BC009362E7 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E869EAF42A0C31D80039C979 /* AuthorizethionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthorizethionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E869EAF72A0C31D80039C979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E869EAF92A0C31D80039C979 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E869EAFB2A0C31D80039C979 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E869EAFB2A0C31D80039C979 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E869EAFE2A0C31D80039C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E869EB002A0C31DA0039C979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E869EB032A0C31DA0039C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E869EB052A0C31DA0039C979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B3F0E32A0C39BC009362E7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E869EAF72A0C31D80039C979 /* AppDelegate.swift */,
 				E869EAF92A0C31D80039C979 /* SceneDelegate.swift */,
-				E869EAFB2A0C31D80039C979 /* ViewController.swift */,
+				E869EAFB2A0C31D80039C979 /* LoginViewController.swift */,
+				E8B3F0E32A0C39BC009362E7 /* WelcomeViewController.swift */,
 				E869EAFD2A0C31D80039C979 /* Main.storyboard */,
 				E869EB002A0C31DA0039C979 /* Assets.xcassets */,
 				E869EB022A0C31DA0039C979 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E869EAFC2A0C31D80039C979 /* ViewController.swift in Sources */,
+				E869EAFC2A0C31D80039C979 /* LoginViewController.swift in Sources */,
+				E8B3F0E42A0C39BC009362E7 /* WelcomeViewController.swift in Sources */,
 				E869EAF82A0C31D80039C979 /* AppDelegate.swift in Sources */,
 				E869EAFA2A0C31D80039C979 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maks-Usyk.AuthorizethionApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Maks-Usyk.AuthorizethionApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
